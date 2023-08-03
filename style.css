@@ -1,0 +1,18 @@
+.main {
+  border: 2px solid black;
+  width: 300px;
+  /* text-align: center; */
+  background-color: aliceblue;
+}
+.first {
+  border: 1px solid green;
+  /* padding: 5px; */
+  margin: 5px;
+  text-align: center;
+}
+.second {
+  border: 1px solid green;
+  /* padding: 5px; */
+  margin: 5px;
+  text-align: start;
+}

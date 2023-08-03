@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">J Query implementation</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="main">
+      <div class="first">
+        <h2>BOX1</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="second">
+        <ul id="list">
+          <li>Mango</li>
+          <li>Bango</li>
+          <li>Pango</li>
+          <li>Tango</li>
+          <li>Jango</li>
+        </ul>
+      </div>
+    </div>
+    <button id="hide">Hide Button</button>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        // let a = $("p").html();
+        // console.log(a);
+        // $("#list li")
+        //   .css("border", "5px solid yellow")
+        //   .css("margin-top", "2px");
+        $(".main").click(function () {
+          $(".main").css("background-color", "red");
+        });
+        $(".first").mouseenter(function () {
+          $(".first").css("background-color", "yellow");
+        });
+        $("#heading").mouseover(function () {
+          $("#heading").css("background-color", "green");
+        });
+        $("#hide").mouseup(function () {
+          $("p:first").hide();
+        });
+        $("#hide").mousedown(function () {
+          $("p:first").show();
+        });
+      });
+    </script>
+  </body>
+</html>
